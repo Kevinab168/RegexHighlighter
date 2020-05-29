@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootswatch Theme -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/spacelab/bootstrap.css">
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Regex Tester</title>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a href="#" class="navbar-brand">Regex Tester</a>
+  </nav>
+  <!-- Text to test Against -->
+  <div class="container" id="main-container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card text-black mt-3">
+          <div class="card-body">
+            <h5 class="text-primary my-3">Test String</h5>
+            <form>
+              <fieldset>
+                <div class="form-group">
+                  <textarea id="input-text" rows="3" class="form-control"></textarea>
+                </div>
+              </fieldset>
+            </form>
+
+            <h5 class="text-primary my-3">Flags</h5>
+            <form >
+              <fieldset>
+                <div class="form-group">
+                  <input type="text" name="flag-text" id="flag-text" class="form-control">
+                </div>
+              </fieldset>
+            </form>
+            <h5 class="text-primary my-3">Regex</h5>
+            <form>
+              <fieldset>
+                <div class="form-group">
+                  <input type="text" id="regex-text" class="form-control" placeholder="remember to escape special characters...">
+                </div>
+              </fieldset>
+            </form>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Output Data -->
+  <div class="container">
+    <div id="output">
+    </div>
+  </div>
+  
+
+
+  
+
+
+
+  <!-- Personal JS -->
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
